@@ -23,6 +23,9 @@ class MainTest {
         assertEquals("", caeserCipher.cipher("", 12));
     }
 
-    //TESTS
+    @Test
+    void testCeasarCipherOffsetBy11(){
+        assertEquals("tai mdq kag pauzs fapmk", caeserCipher.cipher("how are you doing today", 11));
+    }
 
 }
